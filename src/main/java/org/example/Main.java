@@ -6,8 +6,11 @@ import org.example.model.Page;
 
 public class Main {
     public static void main(String[] args) {
-        MethodTests tests = new MethodTests();
-        tests.TestBookMethod();
-        tests.TestNewspaperMethod();
+        Book book = new Book("Harry Potter");
+        book.setTitle("The Hunger Games");
+        System.out.println(book.getTitle());
+        Newspaper newspaper = new Newspaper("New York Time");
+        newspaper.setCurrentPage(2);
+        System.out.println(newspaper.getCurrentPage());
     }
 }
