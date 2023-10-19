@@ -6,6 +6,6 @@ public class Newspaper extends Page{
         super();
         _title = title;
     }
-    public int getCurrentPage() { return _currentPage; }
-    public void setCurrentPage(int pageNumber) { _currentPage += pageNumber; }
+    @Override public int getCurrentPage() { return _currentPage; }
+    @Override public void setCurrentPage(int pageNumber) { _currentPage += pageNumber; }
 }
