@@ -6,6 +6,9 @@ public class Page {
     public Page(){
         _currentPage = 0;
     }
+    public String getTitle() { return _title; }
+    public void setTitle(String title) { _title = title; }
+
     public int getCurrentPage() { return _currentPage; }
     public void setCurrentPage(int pageNumber) { _currentPage += pageNumber; }
 }
