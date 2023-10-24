@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class MethodTests {
 
     @Test void testBook(){
+        // ok
         Book book = new Book("Harry Potter");
         book.setTitle("The Hunger Games");
         assertEquals("The Hunger Games", book.getTitle());
