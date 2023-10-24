@@ -38,4 +38,5 @@ class MethodTests {
         boolean result = other_book.hasSameTitle(book.getTitle());
         assertEquals(true, result);
     }
+    //hi
 }
