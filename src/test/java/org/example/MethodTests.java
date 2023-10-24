@@ -1,23 +1,35 @@
 package org.example;
 
+import org.example.model.Page;
 import org.example.model.Book;
 import org.example.model.Newspaper;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class MethodTests {
+class MethodTests {
+    Page book;
+    Page newspaper;
+    @BeforeEach
+    void init(){
+        book = new Book("Harry Potter");
+        newspaper = new Newspaper("New York Time");
+    }
 
-    @Test void testBook(){
-        // ok
-        Book book = new Book("Harry Potter");
+    @Test void testBookTitle(){
         book.setTitle("The Hunger Games");
         assertEquals("The Hunger Games", book.getTitle());
     }
 
-    @Test void testNewspaper(){
-        Newspaper newspaper = new Newspaper("New York Time");
+    @Test void testNewspaperPageCounter(){
         newspaper.setCurrentPage(2);
         assertEquals(2, newspaper.getCurrentPage());
+    }
+
+    @Test void testBookHasSameTitle(){
+        Page other_book = new Book("The Hunger Games");
+        boolean result = other_book.hasSameTitle(book.getTitle());
+        assertEquals(false, result);
     }
 }

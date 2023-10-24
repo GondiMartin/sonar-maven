@@ -6,6 +6,5 @@ public class Book extends Page{
         super();
         _title = title;
     }
-    @Override public String getTitle() { return _title; }
-    @Override public void setTitle(String title) { _title = title; }
+
 }
