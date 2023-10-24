@@ -14,6 +14,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.organization>gondimartin</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.coverage.jacoco.xmlReportPaths>
+            ../sonar-maven/jacoco/jacoco.xml
+        </sonar.coverage.jacoco.xmlReportPaths>
     </properties>
     <dependencies>
         <dependency>
