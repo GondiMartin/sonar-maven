@@ -33,10 +33,9 @@ class MethodTests {
         assertEquals(false, result);
     }
 
-    // További teszt az összes út lefedésére 
-    /*@Test void testBookHasSameTitle_success_same(){
+    @Test void testBookHasSameTitle_success_same(){
         Page other_book = new Book("Harry Potter");
         boolean result = other_book.hasSameTitle(book.getTitle());
         assertEquals(true, result);
-    }*/
+    }
 }
