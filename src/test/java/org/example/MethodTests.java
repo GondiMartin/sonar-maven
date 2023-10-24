@@ -27,9 +27,15 @@ class MethodTests {
         assertEquals(2, newspaper.getCurrentPage());
     }
 
-    @Test void testBookHasSameTitle(){
+    @Test void testBookHasSameTitle_success_notSame(){
         Page other_book = new Book("The Hunger Games");
         boolean result = other_book.hasSameTitle(book.getTitle());
         assertEquals(false, result);
+    }
+
+    @Test void testBookHasSameTitle_success_same(){
+        Page other_book = new Book("Harry Potter");
+        boolean result = other_book.hasSameTitle(book.getTitle());
+        assertEquals(true, result);
     }
 }

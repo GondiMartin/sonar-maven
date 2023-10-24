@@ -6,6 +6,7 @@ public class Page {
 
     public Page(){
         _currentPage = 0;
+        _currentPage = 0;
     }
 
     public String getTitle() { return _title; }
