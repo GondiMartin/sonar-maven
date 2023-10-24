@@ -6,7 +6,6 @@ public class Page {
 
     public Page(){
         _currentPage = 0;
-        _currentPage = 0;
     }
 
     public String getTitle() { return _title; }
@@ -16,9 +15,6 @@ public class Page {
     public void setCurrentPage(int pageNumber) { _currentPage += pageNumber; }
 
     public boolean hasSameTitle(String title){
-        if (_title.equals(title))
-            return true;
-        else
-            return false;
+        return _title.equals(title);
     }
 }
