@@ -15,11 +15,6 @@ public class Page {
     public void setCurrentPage(int pageNumber) { _currentPage += pageNumber; }
 
     public boolean hasSameTitle(String title){
-        // Kikomentezett a jó
-        //return _title.equals(title);
-        if (_title.equals(title))
-            return true;
-        else
-            return false;
+        return _title.equals(title);
     }
 }
